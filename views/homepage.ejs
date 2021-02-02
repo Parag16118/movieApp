@@ -1,0 +1,29 @@
+<%- include("./partials/header") %> 
+<title>Movies App</title>
+
+  <div class="jumbotron jumbotron-cl " style="text-align: center;">
+
+    <h1 class="display-4 "><span class="badge badge-secondary font-weight-bold">
+      <!-- <span class="badge badge-pill badge-danger ml-0"> -->
+        MOVIES
+      <!-- </span> -->
+      <span>
+      </h1>
+     <br> 
+    <p class="lead"style="color:white">This is a simple movie search app which will provide you information about any movie.</p>
+    <hr class="my-4">
+    
+    <!-- <p>Please enter the name of the movie</p> -->
+    <div class="row justify-content-center">
+    <form class="form-inline my-2 my-lg-0 " action="/result" method="GET">
+
+      <input class="form-control form-control-lg mr-3 ml-3 mb-2 mb-sm-0 ml-sm-0 mr-sm-2 " type="search" placeholder="Enter Name" aria-label="Search" name="movieName">
+
+      <button class="btn btn-success btn-lg mx-auto" type="submit"><i class="fa fa-search"></i></button>
+
+    </form>
+    </div>
+    <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+  </div>
+
+<%- include("./partials/footer") %> 

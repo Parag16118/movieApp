@@ -1,0 +1,35 @@
+
+body{
+    /* background-color: #64FFDA; */
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.jumbotron-cl{
+    background-color: black;
+}
+
+.footer{
+    margin: 0px auto;
+    /* background-color: #A7FFEB; */
+}
+
+.navbar-color{
+    background-color: #6c757d;
+}
+
+.bg-cl-wh{
+    background-color: white;
+}
+
+.bg-cl-bl{
+    background-color: black;
+}
+
+.cl-wh{
+    color:white;
+}
+
+.bor-grn{
+    border: 10px solid  #6c757d;
+}

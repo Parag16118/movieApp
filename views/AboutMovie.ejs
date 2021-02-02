@@ -1,0 +1,53 @@
+<%- include("./partials/header") %> 
+<title>About Movies</title>
+
+<% console.log(movieData) %> 
+
+<div class="container mt-5 cl-wh">
+
+    <div class="row">
+        
+            <!-- <div class="media"> -->
+                <div class=" offset-sm-0 col-12 col-sm-3 mb-2">
+                    <img src=<%= movieData.Poster %>  class="img-fluid img-thumbnail  mr-3 align-self-center mx-auto " alt=<%=movieData.Titile%> height="300%" width="200%">
+                </div>
+
+                <div class="col-12 col-sm-9">
+                    <!-- <div class="media-body"> -->
+                        <h3 class="mt-0 font-weight-bold "><%=movieData.Title%> </h3>
+
+                       <h5> <span class="badge badge-warning"><span class="">IMDb</span></span>
+
+                        <span class="fa fa-star" style="color:rgb(233, 233, 54)"></span><span class=""> <%= movieData.imdbRating%>/10 </span>
+                        &nbsp;
+                        <span class="badge badge-success"><span class=""><%= movieData.Metascore %> </span></span> Metascore
+
+                        &nbsp;
+                        <!-- <span class="badge badge-danger"><span class=""></span></span> Rotten Tomatoes -->
+
+                       </h5>
+                       <br>
+                        
+                        <h5 class="mt-0"><span class="font-weight-bold">IMDb Votes:</span> <%=movieData.  imdbVotes%> </h5>
+                        <h5 class="mt-0"><span class="font-weight-bold">Release Date:</span> <%=movieData.Released%> </h5>
+                        <h5 class="mt-0"><span class="font-weight-bold">Rated:</span> <%=movieData.Rated%> </h5>
+                        <h5 class="mt-0"><span class="font-weight-bold">Runtime:</span> <%=movieData.Runtime%> </h5>
+                        <h5 class="mt-0"><span class="font-weight-bold">Genre:</span> <%=movieData.Genre%> </h5>
+                        <h5 class="mt-0"><span class="font-weight-bold">Director:</span> <%=movieData.Director%> </h5>
+                        <h5 class="mt-0"><span class="font-weight-bold">Writer:</span> <%=movieData.Writer%> </h5>
+                        <h5 class="mt-0"><span class="font-weight-bold">Actors:</span> <%=movieData.Actors%> </h5>
+                        <h5 class="mt-0"><span class="font-weight-bold">Plot:</span> <%=movieData.Plot%> </h5>
+                        <h5 class="mt-0"><span class="font-weight-bold">Language:</span> <%=movieData.Language%> </h5>
+                        <h5 class="mt-0"><span class="font-weight-bold">Country:</span> <%=movieData.Country%> </h5>
+                        <h5 class="mt-0"><span class="font-weight-bold">Awards:</span> <%=movieData.Awards%> </h5>
+                        <h5 class="mt-0"><span class="font-weight-bold">Box Office:</span> <%=movieData.BoxOffice%> </h5>
+                        <%=  %> 
+
+                    <!-- </div> -->
+                </div>
+            <!-- </div> -->
+    </div>
+
+</div>
+
+<%- include("./partials/footer") %> 

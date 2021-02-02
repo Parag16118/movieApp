@@ -1,0 +1,47 @@
+<%- include("./partials/header") %> 
+<title><%=title%> </title>
+
+    <%if(movieData.Response==='False'){%>
+
+        <div class="container m-auto ">
+            <h1 class="my-4 cl-wh" style="text-align: center;">Movie Not Found!!</h1>
+        </div>
+
+    <%}else{%>
+        <div class="container my-5">
+            <% var x=movieData.Search%>  
+
+            <% for(let i=0;i<x.length;i+=3){%>
+
+                <!-- <div class=""> -->
+
+                    <div class="row align-items-center ">
+
+                        <% for(let j=i;j<x.length&&j<i+3;j++) {%>
+
+                            <div class="col-12 col-sm mb-5 ">
+
+                                <div class="card bg-cl-bl cl-wh bor-grn mx-auto mx-sm-0" style="width: 15rem;">
+                                    <img src="<%=x[j].Poster%>" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title"><%=x[j].Title%></h5>
+                                    <p class="card-text"></p>
+                                    <a href="/result/<%=x[j].imdbID%>" class="btn btn-secondary">Know More</a>
+                                    </div>
+                                </div> 
+
+                            </div>
+
+                        <%}%>
+
+                    </div>
+                <!-- </div> -->
+            
+            <%}%>
+
+    <%}%>
+    </div>
+
+ 
+
+<%- include("./partials/footer") %> 
